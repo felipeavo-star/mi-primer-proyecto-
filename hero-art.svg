@@ -14,20 +14,20 @@
 <circle cx="210" cy="580" r="150" fill="#7657FF" opacity=".12" filter="url(#glow)"/>
 
 <!-- Camino visual: IDEA → IDENTIDAD → VISIBILIDAD → CRECIMIENTO -->
-<path d="M82 548 C188 532 245 500 326 446 C414 387 458 340 542 302 C627 264 681 218 816 156" stroke="url(#line)" stroke-width="3" stroke-linecap="round"/>
-<path d="M82 548 C188 532 245 500 326 446 C414 387 458 340 542 302 C627 264 681 218 816 156" stroke="#9A84FF" stroke-opacity=".12" stroke-width="18" stroke-linecap="round" filter="url(#glow)"/>
+<path d="M92 548 C188 532 245 500 326 446 C414 387 458 340 542 302 C627 264 670 218 790 156" stroke="url(#line)" stroke-width="3" stroke-linecap="round"/>
+<path d="M92 548 C188 532 245 500 326 446 C414 387 458 340 542 302 C627 264 670 218 790 156" stroke="#9A84FF" stroke-opacity=".12" stroke-width="18" stroke-linecap="round" filter="url(#glow)"/>
 
-<!-- nodos -->
+<!-- nodos, con margen seguro dentro del lienzo -->
 <circle cx="120" cy="538" r="34" fill="#15161D" stroke="#8064FF" stroke-opacity=".75"/>
 <circle cx="326" cy="446" r="34" fill="#15161D" stroke="#8064FF" stroke-opacity=".75"/>
 <circle cx="542" cy="302" r="34" fill="#15161D" stroke="#A992FF" stroke-opacity=".85"/>
-<circle cx="816" cy="156" r="42" fill="url(#violet)" filter="url(#shadow)"/>
+<circle cx="790" cy="156" r="38" fill="url(#violet)" filter="url(#shadow)"/>
 
 <!-- iconos minimalistas -->
 <path d="M109 540C109 530 117 522 127 522C136 522 143 529 143 538C143 548 136 555 126 555C117 555 109 549 109 540Z" stroke="#FFF" stroke-width="2"/>
 <path d="M315 454L326 435L337 454L326 462Z" fill="#FFF" fill-opacity=".9"/>
 <path d="M529 309L542 293L555 309L542 315Z" fill="#FFF" fill-opacity=".9"/>
-<path d="M800 170V142M800 170H828M807 162L817 152" stroke="#FFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M774 170V142M774 170H802M781 162L791 152" stroke="#FFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
 
 <!-- etiquetas -->
 <rect x="76" y="604" width="116" height="54" rx="16" fill="#FFF" fill-opacity=".96" filter="url(#shadow)"/>
@@ -42,9 +42,9 @@
 <text x="492" y="248" fill="#737783" font-family="Arial,sans-serif" font-size="10" letter-spacing="1.4">03 · VISIBILIDAD</text>
 <text x="492" y="268" fill="#11131A" font-family="Arial,sans-serif" font-size="15" font-weight="700">La hacemos crecer</text>
 
-<rect x="650" y="78" width="176" height="58" rx="17" fill="#FFF" fill-opacity=".97" filter="url(#shadow)"/>
-<text x="672" y="101" fill="#737783" font-family="Arial,sans-serif" font-size="10" letter-spacing="1.4">04 · CRECIMIENTO</text>
-<text x="672" y="123" fill="#6D4AFF" font-family="Arial,sans-serif" font-size="16" font-weight="700">La convertimos en acción</text>
+<rect x="610" y="78" width="176" height="58" rx="17" fill="#FFF" fill-opacity=".97" filter="url(#shadow)"/>
+<text x="632" y="101" fill="#737783" font-family="Arial,sans-serif" font-size="10" letter-spacing="1.4">04 · CRECIMIENTO</text>
+<text x="632" y="123" fill="#6D4AFF" font-family="Arial,sans-serif" font-size="16" font-weight="700">La convertimos en acción</text>
 
 <!-- centro de marca -->
 <g filter="url(#shadow)">
@@ -56,5 +56,5 @@
 </g>
 
 <text x="72" y="82" fill="#FFF" font-family="Arial,sans-serif" font-size="11" letter-spacing="2.5" opacity=".7">UNA IDEA MERECE SER VISTA</text>
-<circle cx="798" cy="84" r="6" fill="#FFF"/><circle cx="820" cy="84" r="6" fill="#A992FF"/><circle cx="842" cy="84" r="6" fill="#6D4AFF"/>
+<circle cx="778" cy="84" r="6" fill="#FFF"/><circle cx="800" cy="84" r="6" fill="#A992FF"/><circle cx="822" cy="84" r="6" fill="#6D4AFF"/>
 </svg>
