@@ -1,60 +1,22 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 720" fill="none">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 650" fill="none">
 <defs>
-  <linearGradient id="bg" x1="70" y1="80" x2="830" y2="650" gradientUnits="userSpaceOnUse"><stop stop-color="#0F1015"/><stop offset="1" stop-color="#211B36"/></linearGradient>
-  <linearGradient id="violet" x1="120" y1="120" x2="760" y2="610" gradientUnits="userSpaceOnUse"><stop stop-color="#CFC4FF"/><stop offset=".45" stop-color="#8064FF"/><stop offset="1" stop-color="#5635E8"/></linearGradient>
-  <linearGradient id="soft" x1="180" y1="160" x2="690" y2="550" gradientUnits="userSpaceOnUse"><stop stop-color="#FFFFFF" stop-opacity=".16"/><stop offset="1" stop-color="#FFFFFF" stop-opacity=".02"/></linearGradient>
-  <linearGradient id="line" x1="80" y1="610" x2="820" y2="170" gradientUnits="userSpaceOnUse"><stop stop-color="#7155FF" stop-opacity=".15"/><stop offset=".5" stop-color="#A992FF"/><stop offset="1" stop-color="#FFFFFF" stop-opacity=".6"/></linearGradient>
-  <filter id="glow"><feGaussianBlur stdDeviation="28"/></filter>
-  <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="22" stdDeviation="24" flood-color="#000" flood-opacity=".35"/></filter>
-  <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse"><path d="M36 0H0V36" stroke="#FFF" stroke-opacity=".045"/></pattern>
+  <linearGradient id="violet" x1="120" y1="520" x2="820" y2="100" gradientUnits="userSpaceOnUse"><stop stop-color="#6D4AFF"/><stop offset=".5" stop-color="#A992FF"/><stop offset="1" stop-color="#FFFFFF"/></linearGradient>
+  <radialGradient id="core" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(515 330) rotate(90) scale(190)"><stop stop-color="#7657FF" stop-opacity=".24"/><stop offset="1" stop-color="#7657FF" stop-opacity="0"/></radialGradient>
+  <filter id="glow"><feGaussianBlur stdDeviation="18"/></filter>
+  <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%"><feDropShadow dx="0" dy="18" stdDeviation="20" flood-color="#000" flood-opacity=".45"/></filter>
+  <pattern id="grid" width="34" height="34" patternUnits="userSpaceOnUse"><path d="M34 0H0V34" stroke="#fff" stroke-opacity=".035"/></pattern>
 </defs>
-<rect width="900" height="720" rx="48" fill="url(#bg)"/>
-<rect width="900" height="720" rx="48" fill="url(#grid)"/>
-<circle cx="690" cy="150" r="170" fill="#7657FF" opacity=".16" filter="url(#glow)"/>
-<circle cx="210" cy="580" r="150" fill="#7657FF" opacity=".12" filter="url(#glow)"/>
-
-<!-- Camino visual: IDEA → IDENTIDAD → VISIBILIDAD → CRECIMIENTO -->
-<path d="M92 548 C188 532 245 500 326 446 C414 387 458 340 542 302 C627 264 670 218 790 156" stroke="url(#line)" stroke-width="3" stroke-linecap="round"/>
-<path d="M92 548 C188 532 245 500 326 446 C414 387 458 340 542 302 C627 264 670 218 790 156" stroke="#9A84FF" stroke-opacity=".12" stroke-width="18" stroke-linecap="round" filter="url(#glow)"/>
-
-<!-- nodos, con margen seguro dentro del lienzo -->
-<circle cx="120" cy="538" r="34" fill="#15161D" stroke="#8064FF" stroke-opacity=".75"/>
-<circle cx="326" cy="446" r="34" fill="#15161D" stroke="#8064FF" stroke-opacity=".75"/>
-<circle cx="542" cy="302" r="34" fill="#15161D" stroke="#A992FF" stroke-opacity=".85"/>
-<circle cx="790" cy="156" r="38" fill="url(#violet)" filter="url(#shadow)"/>
-
-<!-- iconos minimalistas -->
-<path d="M109 540C109 530 117 522 127 522C136 522 143 529 143 538C143 548 136 555 126 555C117 555 109 549 109 540Z" stroke="#FFF" stroke-width="2"/>
-<path d="M315 454L326 435L337 454L326 462Z" fill="#FFF" fill-opacity=".9"/>
-<path d="M529 309L542 293L555 309L542 315Z" fill="#FFF" fill-opacity=".9"/>
-<path d="M774 170V142M774 170H802M781 162L791 152" stroke="#FFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-
-<!-- etiquetas -->
-<rect x="76" y="604" width="116" height="54" rx="16" fill="#FFF" fill-opacity=".96" filter="url(#shadow)"/>
-<text x="96" y="626" fill="#737783" font-family="Arial,sans-serif" font-size="10" letter-spacing="1.4">01 · IDEA</text>
-<text x="96" y="646" fill="#11131A" font-family="Arial,sans-serif" font-size="15" font-weight="700">La aterrizamos</text>
-
-<rect x="265" y="487" width="142" height="54" rx="16" fill="#FFF" fill-opacity=".96" filter="url(#shadow)"/>
-<text x="285" y="509" fill="#737783" font-family="Arial,sans-serif" font-size="10" letter-spacing="1.4">02 · IDENTIDAD</text>
-<text x="285" y="529" fill="#11131A" font-family="Arial,sans-serif" font-size="15" font-weight="700">La construimos</text>
-
-<rect x="472" y="226" width="154" height="54" rx="16" fill="#FFF" fill-opacity=".96" filter="url(#shadow)"/>
-<text x="492" y="248" fill="#737783" font-family="Arial,sans-serif" font-size="10" letter-spacing="1.4">03 · VISIBILIDAD</text>
-<text x="492" y="268" fill="#11131A" font-family="Arial,sans-serif" font-size="15" font-weight="700">La hacemos crecer</text>
-
-<rect x="610" y="78" width="176" height="58" rx="17" fill="#FFF" fill-opacity=".97" filter="url(#shadow)"/>
-<text x="632" y="101" fill="#737783" font-family="Arial,sans-serif" font-size="10" letter-spacing="1.4">04 · CRECIMIENTO</text>
-<text x="632" y="123" fill="#6D4AFF" font-family="Arial,sans-serif" font-size="16" font-weight="700">La convertimos en acción</text>
-
-<!-- centro de marca -->
-<g filter="url(#shadow)">
-<circle cx="455" cy="348" r="116" fill="url(#soft)" stroke="#FFF" stroke-opacity=".13"/>
-<circle cx="455" cy="348" r="72" fill="#101116" stroke="#A992FF" stroke-opacity=".45"/>
-<text x="455" y="340" text-anchor="middle" fill="#FFF" font-family="Arial,sans-serif" font-size="13" letter-spacing="2">SOLO</text>
-<text x="455" y="364" text-anchor="middle" fill="#FFF" font-family="Arial,sans-serif" font-size="24" font-weight="700">ESTUDIO</text>
-<circle cx="455" cy="388" r="4" fill="#8A70FF"/>
-</g>
-
-<text x="72" y="82" fill="#FFF" font-family="Arial,sans-serif" font-size="11" letter-spacing="2.5" opacity=".7">UNA IDEA MERECE SER VISTA</text>
-<circle cx="778" cy="84" r="6" fill="#FFF"/><circle cx="800" cy="84" r="6" fill="#A992FF"/><circle cx="822" cy="84" r="6" fill="#6D4AFF"/>
+<rect width="900" height="650" fill="url(#grid)" opacity=".65"/>
+<circle cx="515" cy="330" r="230" fill="url(#core)"/>
+<circle cx="515" cy="330" r="160" stroke="#9A84FF" stroke-opacity=".08"/><circle cx="515" cy="330" r="205" stroke="#9A84FF" stroke-opacity=".06" stroke-dasharray="2 9"/>
+<path d="M75 535 C165 520 220 486 305 440 C390 394 430 348 515 330 C600 312 650 262 710 210 C765 162 805 125 850 90" stroke="#6D4AFF" stroke-opacity=".15" stroke-width="18" stroke-linecap="round" filter="url(#glow)"/>
+<path d="M75 535 C165 520 220 486 305 440 C390 394 430 348 515 330 C600 312 650 262 710 210 C765 162 805 125 850 90" stroke="url(#violet)" stroke-width="2.5" stroke-linecap="round"/>
+<circle cx="130" cy="520" r="38" fill="#0F1015" stroke="#8064FF" stroke-opacity=".75" stroke-width="1.5" filter="url(#shadow)"/><path d="M130 502c-11 0-19 8-19 18 0 7 4 11 8 15 2 2 3 5 3 8h16c0-3 1-6 3-8 4-4 8-8 8-15 0-10-8-18-19-18Z" stroke="#fff" stroke-width="2"/><path d="M125 547h10M124 552h12" stroke="#A992FF" stroke-width="2" stroke-linecap="round"/>
+<rect x="78" y="556" width="142" height="58" rx="14" fill="#11131A" stroke="#fff" stroke-opacity=".14"/><text x="96" y="578" fill="#A992FF" font-family="Arial,sans-serif" font-size="10" letter-spacing="1.5">01 · IDEA</text><text x="96" y="599" fill="#fff" font-family="Arial,sans-serif" font-size="14">La aterrizamos</text>
+<circle cx="305" cy="440" r="38" fill="#0F1015" stroke="#8064FF" stroke-opacity=".75" stroke-width="1.5" filter="url(#shadow)"/><path d="M295 452l8-18 13-13 7 7-13 13-18 8 3-8Z" stroke="#fff" stroke-width="2" stroke-linejoin="round"/>
+<rect x="253" y="468" width="160" height="58" rx="14" fill="#11131A" stroke="#fff" stroke-opacity=".14"/><text x="271" y="490" fill="#A992FF" font-family="Arial,sans-serif" font-size="10" letter-spacing="1.5">02 · IDENTIDAD</text><text x="271" y="511" fill="#fff" font-family="Arial,sans-serif" font-size="14">La construimos</text>
+<circle cx="515" cy="330" r="118" fill="#7657FF" opacity=".09" filter="url(#glow)"/><circle cx="515" cy="330" r="92" fill="#0B0C11" stroke="#8A70FF" stroke-opacity=".85" stroke-width="2" filter="url(#shadow)"/><circle cx="515" cy="330" r="70" stroke="#fff" stroke-opacity=".06"/><text x="515" y="322" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif" font-size="12" letter-spacing="3">SOLO</text><text x="515" y="348" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif" font-size="24" font-weight="700" letter-spacing="1">ESTUDIO</text><circle cx="515" cy="372" r="4" fill="#8A70FF"/>
+<circle cx="670" cy="246" r="38" fill="#0F1015" stroke="#A992FF" stroke-opacity=".85" stroke-width="1.5" filter="url(#shadow)"/><path d="M651 246c10-13 28-13 38 0-10 13-28 13-38 0Z" stroke="#fff" stroke-width="2"/><circle cx="670" cy="246" r="5" stroke="#fff" stroke-width="2"/><rect x="606" y="278" width="172" height="58" rx="14" fill="#11131A" stroke="#fff" stroke-opacity=".14"/><text x="624" y="300" fill="#A992FF" font-family="Arial,sans-serif" font-size="10" letter-spacing="1.5">03 · VISIBILIDAD</text><text x="624" y="321" fill="#fff" font-family="Arial,sans-serif" font-size="14">La hacemos crecer</text>
+<circle cx="850" cy="90" r="40" fill="#6D4AFF" opacity=".92" filter="url(#shadow)"/><path d="M838 105V76M838 105h28M845 98l12-12" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><rect x="700" y="28" width="178" height="58" rx="14" fill="#11131A" stroke="#fff" stroke-opacity=".14"/><text x="718" y="50" fill="#A992FF" font-family="Arial,sans-serif" font-size="10" letter-spacing="1.5">04 · CRECIMIENTO</text><text x="718" y="71" fill="#fff" font-family="Arial,sans-serif" font-size="14">La convertimos en acción</text>
+<circle cx="850" cy="90" r="6" fill="#fff"/><circle cx="825" cy="90" r="6" fill="#A992FF"/><circle cx="800" cy="90" r="6" fill="#6D4AFF"/><circle cx="75" cy="535" r="4" fill="#A992FF"/><circle cx="305" cy="440" r="4" fill="#fff"/><circle cx="670" cy="246" r="4" fill="#A992FF"/>
 </svg>
