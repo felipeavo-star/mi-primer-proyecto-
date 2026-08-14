@@ -30,6 +30,15 @@
       if(title) title.innerHTML='Lo que necesitas, <span>sin complicarlo.</span>';
       if(copy) copy.textContent='Elegimos las herramientas según tu negocio. No te vendemos un paquete porque sí.';
     }
+
+    document.querySelectorAll('.nav-links a').forEach(link=>{
+      const text=link.textContent.trim().toLowerCase();
+      if(text.includes('proyectos')) link.remove();
+      if(text.includes('nosotros')) link.remove();
+      if(text.includes('servicios')) link.setAttribute('href','#soluciones');
+      if(text.includes('cómo trabajamos')) link.setAttribute('href','#metodo');
+      if(text.includes('contacto')) link.setAttribute('href','#contacto');
+    });
   }
   if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',clean);
   else clean();
