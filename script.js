@@ -1,27 +1,18 @@
 const enhancementStyles = document.createElement('link');
 enhancementStyles.rel = 'stylesheet';
-enhancementStyles.href = 'solo-enhancements.css?v=2';
+enhancementStyles.href = 'solo-enhancements.css?v=3';
 document.head.appendChild(enhancementStyles);
 
 const menuToggle = document.querySelector('.menu-toggle');
 const navLinks = document.querySelector('.nav-links');
 
-menuToggle?.addEventListener('click', () => {
-  navLinks.classList.toggle('open');
-});
-
-document.querySelectorAll('.nav-links a').forEach(link => {
-  link.addEventListener('click', () => navLinks.classList.remove('open'));
-});
+menuToggle?.addEventListener('click', () => navLinks.classList.toggle('open'));
+document.querySelectorAll('.nav-links a').forEach(link => link.addEventListener('click', () => navLinks.classList.remove('open')));
 
 const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) entry.target.classList.add('visible');
-  });
+  entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); });
 }, { threshold: 0.12 });
-
 document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
-
 document.getElementById('year').textContent = new Date().getFullYear();
 
 document.getElementById('contactForm')?.addEventListener('submit', event => {
@@ -30,14 +21,9 @@ document.getElementById('contactForm')?.addEventListener('submit', event => {
   const original = button.innerHTML;
   button.innerHTML = '¡Perfecto! Nos pondremos en contacto →';
   button.disabled = true;
-  setTimeout(() => {
-    button.innerHTML = original;
-    button.disabled = false;
-    event.currentTarget.reset();
-  }, 2500);
+  setTimeout(() => { button.innerHTML = original; button.disabled = false; event.currentTarget.reset(); }, 2500);
 });
 
-/* --- Solo Estudio: experiencia visual premium --- */
 const heroMetrics = document.querySelector('.hero .trust-row');
 if (heroMetrics) {
   heroMetrics.classList.add('hero-metrics');
@@ -45,22 +31,21 @@ if (heroMetrics) {
     <div><strong>01</strong><span>Idea · La aterrizamos</span></div>
     <div><strong>02</strong><span>Identidad · La construimos</span></div>
     <div><strong>03</strong><span>Visibilidad · La hacemos crecer</span></div>
-    <div><strong>04</strong><span>Crecimiento · La convertimos en acción</span></div>
-  `;
+    <div><strong>04</strong><span>Crecimiento · La convertimos en acción</span></div>`;
 }
 
-/* La sección oscura se convierte en el manifiesto de IA */
+/* Manifiesto: primero la persona y su negocio; después la tecnología */
 const statement = document.querySelector('.statement');
 if (statement) {
   const eyebrow = statement.querySelector('.eyebrow');
   const heading = statement.querySelector('h2');
   const copy = statement.querySelector('p:last-child');
-  if (eyebrow) eyebrow.textContent = 'LA IA COMO ALIADA';
-  if (heading) heading.innerHTML = 'La IA trabaja contigo. <span>No en tu lugar.</span>';
-  if (copy) copy.textContent = 'La usamos para avanzar más rápido, ordenar procesos, reducir tareas repetitivas y hacer que cada proyecto pueda aprovechar mejor su tiempo y presupuesto.';
+  if (eyebrow) eyebrow.textContent = 'PARA QUIENES ESTÁN CONSTRUYENDO ALGO';
+  if (heading) heading.innerHTML = 'Tu negocio merece un equipo que <span>esté.</span>';
+  if (copy) copy.textContent = 'No creemos en respuestas complicadas ni en desaparecer después de entregar un proyecto. Creemos en acompañar, explicar y construir contigo.';
 }
 
-/* Bloque de IA: estrategia humana + tecnología */
+/* IA como herramienta transversal */
 if (!document.querySelector('.ai-section')) {
   const ai = document.createElement('section');
   ai.className = 'ai-section';
@@ -83,7 +68,7 @@ if (!document.querySelector('.ai-section')) {
   ai.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 }
 
-/* Sección visual de transformación: de idea desordenada a marca visible */
+/* Antes / después: una transformación que se entiende de un vistazo */
 if (!document.querySelector('.transformation')) {
   const transformation = document.createElement('section');
   transformation.className = 'transformation section';
@@ -118,12 +103,11 @@ if (!document.querySelector('.transformation')) {
       </div>
       <p class="transform-foot reveal">No prometemos fórmulas mágicas. Construimos contigo un sistema que puedas entender y seguir mejorando.</p>
     </div>`;
-  const services = document.querySelector('#soluciones');
-  services?.before(transformation);
+  document.querySelector('#soluciones')?.before(transformation);
   transformation.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 }
 
-/* Testimonios: reforzar que son demostrativos hasta contar con casos reales */
+/* Los testimonios siguen siendo claramente demostrativos hasta tener clientes reales */
 document.querySelectorAll('.testimonial-card').forEach(card => {
   if (!card.querySelector('.demo-label')) {
     const label = document.createElement('span');
@@ -134,7 +118,7 @@ document.querySelectorAll('.testimonial-card').forEach(card => {
   }
 });
 
-/* Cierre de marca: una última pantalla que lleva naturalmente a Conversemos */
+/* Cierre de marca */
 if (!document.querySelector('.final-cta')) {
   const finalCta = document.createElement('section');
   finalCta.className = 'final-cta';
@@ -150,7 +134,6 @@ if (!document.querySelector('.final-cta')) {
   finalCta.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 }
 
-/* Pequeña interacción: el recorrido visual gana protagonismo mientras se entra al hero */
 const heroVisual = document.querySelector('.hero-visual');
 window.addEventListener('scroll', () => {
   if (!heroVisual || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
