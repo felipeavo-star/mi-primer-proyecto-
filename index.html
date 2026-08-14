@@ -3,10 +3,119 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mi primer proyecto</title>
+  <meta name="description" content="Servicios de marketing y publicidad para emprendedores y Pymes. Estrategia, redes sociales, publicidad digital, diseño y desarrollo web.">
+  <title>Impulsa | Marketing para emprendedores y Pymes</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>¡Hola, GitHub!</h1>
-  <p>Este es mi primer proyecto creado con GitHub y ChatGPT.</p>
+  <header class="header">
+    <nav class="nav container">
+      <a class="logo" href="#inicio"><span>i</span> Impulsa</a>
+      <button class="menu-toggle" aria-label="Abrir menú">☰</button>
+      <div class="nav-links">
+        <a href="#servicios">Servicios</a>
+        <a href="#proceso">Cómo trabajamos</a>
+        <a href="#nosotros">Nosotros</a>
+        <a class="nav-cta" href="#contacto">Hablemos</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">MARKETING SIN COMPLICACIONES</p>
+          <h1>Haz que tu negocio <em>se vea, conecte y crezca.</em></h1>
+          <p class="hero-text">Marketing y publicidad pensados para emprendedores y Pymes que necesitan resultados, no palabras difíciles.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#contacto">Quiero hacer crecer mi negocio <span>→</span></a>
+            <a class="btn btn-secondary" href="#servicios">Ver servicios</a>
+          </div>
+          <div class="trust-row">
+            <div><strong>360°</strong><span>Visión integral</span></div>
+            <div><strong>Pyme</strong><span>Enfoque práctico</span></div>
+            <div><strong>ROI</strong><span>Orientados a resultados</span></div>
+          </div>
+        </div>
+
+        <div class="hero-card reveal">
+          <div class="floating-card top-card"><span class="dot"></span> Tu negocio puede crecer</div>
+          <div class="growth-card">
+            <div class="growth-header"><span>Presencia digital</span><strong>+68%</strong></div>
+            <div class="chart"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+            <div class="growth-footer"><span>Visibilidad</span><span>Conversión</span><span>Ventas</span></div>
+          </div>
+          <div class="floating-card bottom-card">✓ Estrategia + creatividad + ejecución</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="services section" id="servicios">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">LO QUE HACEMOS</p>
+          <h2>Todo lo que necesitas para <span>mover tu negocio.</span></h2>
+          <p>No necesitas contratar cinco proveedores. Reunimos estrategia, creatividad y marketing digital en un solo lugar.</p>
+        </div>
+
+        <div class="service-grid">
+          <article class="service-card featured reveal"><div class="service-number">01</div><div class="icon">↗</div><h3>Publicidad digital</h3><p>Campañas en Google, Meta y otras plataformas para atraer personas realmente interesadas en lo que vendes.</p><a href="#contacto">Quiero vender más →</a></article>
+          <article class="service-card reveal"><div class="service-number">02</div><div class="icon">◎</div><h3>Redes sociales</h3><p>Contenido, planificación y gestión para construir una marca activa, profesional y cercana.</p><a href="#contacto">Potenciar mis redes →</a></article>
+          <article class="service-card reveal"><div class="service-number">03</div><div class="icon">✦</div><h3>Marca & diseño</h3><p>Identidad visual, piezas gráficas y materiales que hacen que tu negocio se vea tan profesional como realmente es.</p><a href="#contacto">Mejorar mi marca →</a></article>
+          <article class="service-card reveal"><div class="service-number">04</div><div class="icon">⌁</div><h3>Páginas web</h3><p>Landing pages y sitios web rápidos, modernos y pensados para convertir visitas en oportunidades.</p><a href="#contacto">Crear mi web →</a></article>
+          <article class="service-card reveal"><div class="service-number">05</div><div class="icon">◌</div><h3>Estrategia</h3><p>Definimos objetivos, público, canales y acciones para que cada peso invertido tenga un propósito.</p><a href="#contacto">Ordenar mi marketing →</a></article>
+          <article class="service-card reveal"><div class="service-number">06</div><div class="icon">▣</div><h3>Contenido</h3><p>Fotografía, video, copywriting y piezas digitales que cuentan lo que haces de una forma que invita a comprar.</p><a href="#contacto">Crear contenido →</a></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="statement section">
+      <div class="container statement-inner reveal">
+        <p class="eyebrow">PARA NEGOCIOS REALES</p>
+        <h2>Tu tamaño no debería limitar tus <span>ideas.</span></h2>
+        <p>Trabajamos con emprendedores y Pymes de gastronomía, servicios, retail, profesionales, construcción, automotriz y cualquier rubro que quiera crecer.</p>
+      </div>
+    </section>
+
+    <section class="process section" id="proceso">
+      <div class="container process-grid">
+        <div class="section-heading reveal"><p class="eyebrow">ASÍ TRABAJAMOS</p><h2>Simple, claro y <span>sin vueltas.</span></h2><p>Nos involucramos en tu negocio para entender qué necesitas antes de venderte una solución.</p></div>
+        <div class="steps">
+          <div class="step reveal"><strong>01</strong><div><h3>Te escuchamos</h3><p>Entendemos tu negocio, tus clientes, tus desafíos y tus objetivos.</p></div></div>
+          <div class="step reveal"><strong>02</strong><div><h3>Diseñamos la estrategia</h3><p>Elegimos las acciones y canales que tienen sentido para tu realidad.</p></div></div>
+          <div class="step reveal"><strong>03</strong><div><h3>Ejecutamos</h3><p>Creamos campañas, contenido y experiencias digitales que representen tu marca.</p></div></div>
+          <div class="step reveal"><strong>04</strong><div><h3>Medimos y mejoramos</h3><p>Revisamos los resultados y optimizamos para conseguir más por tu inversión.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about section" id="nosotros">
+      <div class="container about-box reveal">
+        <div><p class="eyebrow">NUESTRA FORMA DE VER EL MARKETING</p><h2>Menos humo.<br><span>Más negocio.</span></h2></div>
+        <div><p>Creemos que el marketing no debería ser exclusivo para las grandes empresas. Una buena estrategia puede hacer una diferencia enorme cuando se adapta al presupuesto, la realidad y las metas de cada negocio.</p><p class="about-note">Partimos desde donde estás y construimos contigo.</p></div>
+      </div>
+    </section>
+
+    <section class="contact section" id="contacto">
+      <div class="container contact-grid">
+        <div class="contact-copy reveal"><p class="eyebrow">¿HABLAMOS?</p><h2>Cuéntanos qué quieres <span>lograr.</span></h2><p>Déjanos tus datos y conversemos sobre tu negocio. La primera conversación es para entenderte, no para presionarte.</p><div class="contact-highlight">✓ Evaluación inicial<br>✓ Propuesta según tus objetivos<br>✓ Soluciones adaptadas a tu presupuesto</div></div>
+        <form class="contact-form reveal" id="contactForm">
+          <label>Nombre<input type="text" name="name" placeholder="Tu nombre" required></label>
+          <label>Empresa o negocio<input type="text" name="business" placeholder="Nombre de tu negocio"></label>
+          <label>¿Qué necesitas?<select name="service"><option>Publicidad digital</option><option>Redes sociales</option><option>Marca y diseño</option><option>Página web</option><option>Estrategia de marketing</option><option>Otro</option></select></label>
+          <label>Cuéntanos brevemente<textarea name="message" rows="4" placeholder="¿Qué quieres conseguir?"></textarea></label>
+          <button class="btn btn-primary" type="submit">Quiero conversar <span>→</span></button>
+          <p class="form-note">Este formulario es una demo. Más adelante podemos conectarlo a WhatsApp, correo o un sistema de leads.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="container footer-inner"><a class="logo" href="#inicio"><span>i</span> Impulsa</a><p>Marketing para negocios que quieren crecer.</p><p>© <span id="year"></span> Impulsa. Todos los derechos reservados.</p></div></footer>
+  <script src="script.js"></script>
 </body>
 </html>
